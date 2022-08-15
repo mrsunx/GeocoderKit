@@ -11,7 +11,7 @@ import CoreLocation
 
 // CLPlacemark can not be subclassed (it crashes on deallocation) so we use this replacement class that has
 // the same signature than the official CLPlacemark to allow drop in replacement
-open class GKPlacemark: Equatable {
+public class GKPlacemark: Equatable {
     var location: CLLocation?
     var region: CLRegion?
     var timeZone: TimeZone?

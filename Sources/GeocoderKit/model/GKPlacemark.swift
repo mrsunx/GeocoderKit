@@ -12,22 +12,22 @@ import CoreLocation
 // CLPlacemark can not be subclassed (it crashes on deallocation) so we use this replacement class that has
 // the same signature than the official CLPlacemark to allow drop in replacement
 public class GKPlacemark: Equatable {
-    var location: CLLocation?
-    var region: CLRegion?
-    var timeZone: TimeZone?
-    var name: String?
-    var thoroughfare: String?
-    var subThoroughfare: String?
-    var locality: String?
-    var subLocality: String?
-    var administrativeArea: String?
-    var subAdministrativeArea: String?
-    var postalCode: String?
-    var isoCountryCode: String?
-    var country: String?
-    var inlandWater: String?
-    var ocean: String?
-    var areasOfInterest: [String]?
+    public var location: CLLocation?
+    public var region: CLRegion?
+    public var timeZone: TimeZone?
+    public var name: String?
+    public var thoroughfare: String?
+    public var subThoroughfare: String?
+    public var locality: String?
+    public var subLocality: String?
+    public var administrativeArea: String?
+    public var subAdministrativeArea: String?
+    public var postalCode: String?
+    public var isoCountryCode: String?
+    public var country: String?
+    public var inlandWater: String?
+    public var ocean: String?
+    public var areasOfInterest: [String]?
 
     public static func == (lhs: GKPlacemark, rhs: GKPlacemark) -> Bool {
         return lhs.location == rhs.location &&
